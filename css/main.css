@@ -1,0 +1,236 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+}
+div, p, input, button, form, span, a, ul, li {
+    box-sizing: border-box;
+}
+.container {
+    width: 1140px; 
+    margin: 0 auto;
+}
+.header {
+    background: rgb(78,190,254);
+    background: -moz-linear-gradient(129deg, rgba(78,190,254,1) 0%, rgba(55,143,217,1) 100%);
+    background: -webkit-linear-gradient(129deg, rgba(78,190,254,1) 0%, rgba(55,143,217,1) 100%);
+    background: linear-gradient(129deg, rgba(78,190,254,1) 0%, rgba(55,143,217,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4ebefe",endColorstr="#378fd9",GradientType=1); 
+    padding-bottom: 72px;
+    padding-top: 62px;
+}
+.logo {
+    margin-bottom: 10px;
+}
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.title {
+    color: white;
+    width: 560px;
+    font-size: 37px;
+    line-height: 49px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+.title span {
+    font-size: 59px;
+    line-height: 73px;
+}
+.intro {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 400;
+    width: 400px;
+    margin: 35px 0 45px 0;
+}
+.btn {
+    font-family: Montserrat;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 900;
+    color: black;
+    padding: 20px 27px;
+    background-color: #ffd429;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+.btn:hover {
+    background-color: #e6ba0b;
+}
+.travelling {
+    width: 580px;
+    margin: 0;
+    padding: 0;
+} 
+.life {
+    padding: 108px 0 120px 0;
+}
+.section-title {
+    font-size: 30px;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+    margin-bottom: 70px;
+}
+.change {
+    width: 290px;
+    padding-top: 80px;
+}
+.change-time {
+    background: url(../img/icon1.jpg) no-repeat top center;
+}
+.change-travel {
+    background: url(../img/icon2.jpg) no-repeat top center;
+}
+.change-val {
+    background: url(../img/icon3.jpg) no-repeat top center;
+}
+.change-title {
+    font-size: 19px;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+}
+.change-text {
+    color: black;
+    text-align: center;
+}
+.registration {
+    background-color: #ecf3f8;
+    padding: 100px 0;
+}
+.input {
+    display: block;
+    font-family: Ubuntu;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    width: 343px;
+    padding: 9px 0 9px 25px;
+    margin: auto;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    border: 1px solid #bbb;
+}
+.btn-form {
+    /* width: 343px; */
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    padding: 15px 90.18px;
+    border: 0;
+}
+.footer {
+    padding: 47px 0;
+    background: #164d7a;
+}
+.copyright {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+
+/* Responsive */
+
+
+
+/* 992-1200 */
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 960px;
+    }
+    .travelling {
+        width: 400px;
+    }
+    
+}
+
+/* 768-992 */
+@media screen and (max-width: 992px) {
+    .container {
+        width: 720px;
+    }
+    .wrapper {
+        flex-direction: column;
+    }
+    .offer {
+        display: flex;
+        flex-direction: column;
+    }
+    .btn {
+        margin-bottom: 20px;
+    }
+    .btn-form {
+        margin-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .title {
+        width: auto;
+    }
+    .header {
+        padding-bottom: 20px;
+    }
+    .offer {
+        width: auto;
+    }
+    .intro {
+        width: 80%;
+    }
+    .input {
+        width: 100%;
+    } 
+     .btn-form {
+        width: 100%;
+    } 
+}
+
+/* 576-768 */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 540px;
+    }
+    .offer {
+        width: 100%;
+    }
+}
+
+/* 320-576 */
+@media screen and (max-width: 576px) {
+    .container {
+        width: 90%;
+    }
+    .travelling {
+        width: 100%;
+    }
+    .input {
+        font-size: 13px;
+    }
+    .btn {
+        font-size: 15px;
+    }
+    .footer {
+        padding: 20px 0;
+    }
+    body {
+        font-size: 15px;
+    }
+}
